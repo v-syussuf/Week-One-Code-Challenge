@@ -42,3 +42,6 @@ Challenge 3: Net Salary Calculator
 - Function salaryAndBenefits is provided for input of basic salary and benefits.
 
 - Afterwhich, Calculate the payee (i.e. Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary by use of the links provided: - www.kra.go.ke/en/individual/calculate-tax/calculating-tax/payeLinks to an external site.
+
+
+Author : Yussuf S. Safia
