@@ -1,21 +1,19 @@
 function netSalaryCalc(income){
     // Constants for monthly tax rates and deductions
      const monthlyTaxablepay = [
-        { minIncome: 0, maxIncome: 24000, rate: 0.1 },
-        { minIncome: 24001, maxIncome: 32333, rate: 0.25 },
-        { minIncome: 32334, maxIncome: 500000, rate: 0.30 },
-        { minIncome: 500001, maxIncome: 800000, rate: 0.325 },
-        { minIncome: 800001, maxIncome: Infinity, rate: 0.35 },
+        { minIncome: 0, maximumIncome: 24000, rate: 0.1 }, { minIncome: 24001, maximumIncome: 32333, rate: 0.25 },
+        { minIncome: 32334, maximumIncome: 500000, rate: 0.30 }, { minIncome: 500001, maximumIncome: 800000, rate: 0.325 },
+        { minIncome: 800001, maximumIncome: Infinity, rate: 0.35 },
       ]
     // Go through each tax range
       for (const range of monthlyTaxablepay) {
     // Confirm if the income falls within the current tax range
-      if (income >= range.minIncome && income <= range.maxIncome) {
+      if (income >= range.minIncome && income <= range.maximumIncome) {
     // Calculate the tax amount for the current range
       return income * range.rate;
       }
     }
-    // If no monthly Taxable pay is found, return 0 
+    // In case there is no monthly Taxable pay is found, return 0 
       return 0;
   } 
    
